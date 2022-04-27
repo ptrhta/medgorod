@@ -1,0 +1,155 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
+  z-index: 9;
+
+  &__logo {
+    max-width: 344px;
+    margin-right: 40px;
+  }
+
+  &-top {
+    padding-top: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(233, 233, 233, 0.8);
+
+    &__row {
+      align-items: center;
+    }
+  }
+
+  &-geo {
+    padding-left: 32px;
+    border-left: 1px solid rgba(233, 233, 233, 0.8);
+    height: fit-content;
+
+    &__city {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 4px;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: var(--text-accent-color);
+
+      &:before {
+        content: url("../../assets/icon__map.svg");
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    &__near {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--text-accent-color);
+    }
+  }
+
+  &-contacts {
+    align-items: flex-end;
+
+    &__title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--text-accent-color);
+
+      margin-bottom: 1px;
+    }
+
+    &__links {
+      align-items: center;
+    }
+
+    &__link {
+      max-width: 32px;
+      margin-right: 4px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &__phone {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: var(--text-accent-color);
+      margin-left: 12px;
+    }
+
+    &__mail {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--text-accent-color);
+    }
+  }
+
+  &-bottom {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &__left {
+      align-items: center;
+    }
+
+    &__home {
+      margin-right: 40px;
+      margin-top: -6px;
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+  .header-bottom__home {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    &-geo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    &__logo {
+      max-width: 80%;
+      margin-right: 0;
+    }
+    &-contacts {
+      &__link {
+        display: none;
+      }
+      &__phone {
+          font-size: 16px;
+      }
+    }
+    &-top {
+        &__row {
+            max-width: 50%;
+        }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+    .header {
+        display: flex;
+        &-top {
+            border: none;
+        }
+        &-contacts, &-bottom__right {
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,12 @@
+@mixin font {
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+}
+
+@mixin font-link {
+    font-weight: normal;
+    font-size: $font-normal;
+    line-height: 1.5rem;
+
+    color: $deep-blue;
+}

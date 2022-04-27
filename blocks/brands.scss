@@ -1,0 +1,23 @@
+.brands {
+    max-width: 100vw;
+        margin-left: calc(-1 * (100vw - 1170px) /2);
+        margin-right: calc(-1 * (100vw - 1170px) /2);
+
+    &__img {
+        height: 80px !important;
+        object-fit: contain;
+        text-align: center;
+        background: #FFFFFF;
+        border-radius: 16px;
+        padding: 24px;
+        margin-right: 20px;
+    }
+}
+
+.brands1 {
+    margin-bottom: 20px;
+}
+
+.brands2 {
+    margin-bottom: 32px;
+}

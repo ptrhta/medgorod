@@ -1,0 +1,9 @@
+.search {
+    &-btn {
+        position: relative;
+        margin-right: 40px;
+        &:before {
+            content: url('../../assets/icon__search--2.svg');
+        }
+    }
+}

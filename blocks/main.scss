@@ -1,0 +1,45 @@
+.main {
+    &-header {
+        position: relative;
+        background-color: rgba(239, 239, 239, 0.3);
+        padding-top: 22px;
+        padding-bottom: 112px;
+
+        &__bg {
+            position: absolute;
+            top: 11px;
+            right: 32px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        max-width: 663px;
+
+        color: var(--text-accent-color);
+    }
+
+    &__breadcrumbs {
+        margin-bottom: 22px;
+    }
+
+    &__content {
+        z-index: 9;
+        margin-top: -64px;
+        padding-bottom: 126px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main {
+        &__content {
+            padding-bottom: 32px;
+        }
+    }
+}

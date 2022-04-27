@@ -1,0 +1,139 @@
+.slide {
+  position: relative;
+
+  padding-left: 69px;
+  align-items: center;
+  min-height: 500px;
+
+  background: url("../../assets/slide-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 20px;
+
+  &__container {
+    max-width: 670px;
+    z-index: 9;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: visible;
+  }
+
+  &__label {
+    width: fit-content;
+    padding: 4px 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+
+    color: #fff;
+    background-color: #035063;
+    border-radius: 3.36145px;
+
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: var(--text-accent-color);
+    margin-bottom: 22px;
+  }
+
+  &__subtitle {
+    font-size: 36px;
+    margin-top: -22px;
+  }
+
+  &__btn {
+    margin-right: 20px;
+  }
+
+  &__active {
+    margin-bottom: 25px;
+  }
+
+  &__price-wrap {
+    width: fit-content;
+  }
+
+  &__oldPrice {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration-line: line-through;
+
+    color: #333333;
+  }
+
+  &__discount {
+    background: url("../../assets/discount.svg");
+    background-repeat: no-repeat;
+    width: 64px;
+    padding: 6px 4px 6px 11px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #fff;
+  }
+}
+
+@media (max-width: 1100px) {
+  .slide {
+    &__img,
+    &__container {
+      max-width: 50%;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 130%;
+    }
+
+    &__subtitle {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .slide {
+    padding-left: 32px;
+
+    &__img {
+      display: none;
+    }
+
+    &__container {
+      max-width: none;
+      padding-right: 32px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .slide {
+    &__btns {
+      flex-direction: column;
+    }
+
+    &__btn {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
